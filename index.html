@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnin' Offroad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="" data-aos="fade" data-aos-duration="600">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="">
+                <a href="#" class="d-flex align-items-center logo">
+                    <img src="assets/images/logo-red.png" class="me-3" width="100">
+                    <h4 class="mb-0">Burnin' Offroad</h4>
+                </a>
+            </div>
+            <div class="nav-hide">
+                <nav>
+                    <ul class="nav">
+                        <li>
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="products.html" class="nav-link">Shop</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Listings</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-hide">
+                <a href="#" class="btn custom-btn">Contact Us</a>
+            </div>
+            <div>
+                <a href="#" class="btn nav-btn" id="nav-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class="nav-mobile-hide nav-hide" id="mobile-nav">
+            <div class="nav-mobile">
+                <nav>
+                    <ul class="nav">
+                        <li>
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="products.html" class="nav-link">Shop</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Listings</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="nav-mobile text-center mt-3">
+                <a href="#" class="btn custom-btn" id="nav-btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="600">
+                    <h1 class="mb-0">$100 RUNS
+                        <span style="color: #E51C1A;">TILL</span>
+                        IT SELLS!</h1>
+                    <p class="my-3 py-1 fw-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit veniam
+                        hic
+                        obcaecati ab esse asperiores!</p>
+                    <a href="#" class="btn custom-btn">Sell your toy</a>
+                    <div class="socials">
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="600">
+                    <img src="assets/images/vector.png" class="img-fluid d-block mx-auto" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-2" class="container" style="margin: 5em auto;">
+        <div>
+            <h2 class="text-center fw-bold" data-aos="fade-up" data-aos-duration="600">BROWSE BY TYPES</h2>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="600">
+            <h3>FEATURED TOYS</h3>
+        </div>
+        <div>
+            <div id="boxes-container" class="d-flex align-items-center overflow-x-scroll" data-aos="fade-up"
+                data-aos-duration="600">
+                <script>
+                    const scrollContainer = document.getElementById("boxes-container");
+
+                    scrollContainer.addEventListener("wheel", (evt) => {
+                        evt.preventDefault();
+                        scrollContainer.scrollLeft += evt.deltaY;
+                    });
+                </script>
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="box">
+                        <!-- images are controlled by inline css the image shown is just an exmaple/placeholder -->
+                        <div class="car-image" style="background-image: url(assets/images/car-example.jpg);"></div>
+                        <div class="p-3 py-4">
+                            <h6 class="car-title">2019 CAN AM X3 MAX RR* </h6>
+                            <h5 class="fw-bold">13.500$</h5>
+                        </div>
+                    </div>
+                </a>
+                <script>
+                    function gengrid() {
+                        let num_stud = 23;
+                        let newdiv;
+                        let divIdName;
+                        for (let i = 1; i <= num_stud; i++) {
+                            newdiv = document.createElement('div');
+                            divIdName = '50' + i;
+                            newdiv.setAttribute('id', divIdName);
+                            newdiv.innerHTML = `<div id="box'+i+'">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <div class="box">
+                                        <!-- images are controlled by inline css the image shown is just an exmaple/placeholder -->
+                                        <div class="car-image" style="background-image: url(assets/images/car-example.jpg);"></div>
+                                        <div class="p-3 py-4">
+                                            <h6 class="car-title">2019 CAN AM X3 MAX RR* </h6>
+                                            <h5 class="fw-bold">13.500$</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>`;
+                            scrollContainer.appendChild(newdiv);
+                        }
+                    }
+                    window.onload = function () {
+                        gengrid();
+                    }
+                </script>
+            </div>
+
+            <div class="text-center my-4" data-aos="fade-up" data-aos-duration="600">
+                <a href="#" class="custom-btn btn ">VIEW MORE LISTINGS</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-3">
+        <div class="container">
+            <h1 class="text-center section-3-heading " data-aos="fade-up" data-aos-duration="600">Why choose us?</h1>
+            <div class="row my-5 py-5">
+                <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="600">
+                    <div class="row why-us-info-box-container">
+                        <div class="col-12 col-sm-6">
+                            <div class="why-us-info-box why-us-info-box-1 shadow">
+                                <i class="fa-regular fa-globe-pointer"></i>
+                                <h5>Worldwide selling</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit fuga consectetur
+                                    possimus dolorum inventore repellendus.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="why-us-info-box why-us-info-box-2 shadow">
+                                <i class="fa-regular fa-signal-bars"></i>
+                                <h5>Stats</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit fuga consectetur
+                                    possimus dolorum inventore repellendus.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="why-us-info-box why-us-info-box-3 shadow">
+                                <i class="fa-regular fa-tag"></i>
+                                <h5>Cheap Pricing</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit fuga consectetur
+                                    possimus dolorum inventore repellendus.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="why-us-info-box why-us-info-box-4 shadow">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h5>Success Rate</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit fuga consectetur
+                                    possimus dolorum inventore repellendus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center vector-2-container"
+                    data-aos="fade-left" data-aos-duration="600">
+                    <img src="assets/images/vector-2.png"
+                        class="vector-2 img-fluid d-block mx-auto mx-lg-0 ms-lg-auto ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-center text-lg-start bg-light text-muted mt-5" data-aos="fade" data-aos-duration="600">
+        <section class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+
+            <div>
+                <a href="" class="me-4 text-reset text-decoration-none">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset text-decoration-none">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset text-decoration-none">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="assets/images/logo-red.png" width="100" class="me-2" alt="">
+                            <span style="font-family: 'Permanent Marker', sans-serif; font-size:20px;">Burnin' Offroad</span>
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <div class="text-center p-4 text-light" style="background-color: #000;">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold " href="https://mdbootstrap.com/">BurningOffroad.com</a>
+        </div>
+    </footer>
+    <script>
+        AOS.init()
+    </script>
+    <script src="assets/js/nav.js"> </script>
+</body>
+
+</html>
