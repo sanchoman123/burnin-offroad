@@ -91,3 +91,12 @@ select:focus,
     background-color: #E51C1A;
     color: #FFF;
 }
+@media only screen and (max-width:991px) {
+    .filters-container-responsive {
+        flex-wrap: wrap;
+    }
+    .filters-container-responsive div {
+        width: 100%;
+        max-width: 400px;
+    }
+}

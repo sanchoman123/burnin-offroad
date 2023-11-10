@@ -53,3 +53,8 @@
     padding: 2em 3em;
     border-radius: 20px;
 }
+@media only screen and (max-width:767px) {
+    .product-image {
+        height: 400px;
+    }
+}
