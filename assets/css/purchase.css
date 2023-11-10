@@ -19,8 +19,30 @@
 }
 
 .container-fluid {
-    max-width: 1200px;
-    padding-top: 10em ;
+    max-width: 1400px;
+    padding-top: 10em;
+}
+
+.satelite-img {
+    position: relative;
+    width: 150px;
+    transform: rotate(-45deg);
+    background-color: #FFFBFB;
+    border-radius: 200px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.satelite-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 2000px;
+    background-color: red;
+    width: 500px;
+    height: 500px;
 }
 
 .panel {
@@ -32,15 +54,23 @@
 
 .pricing-table {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-@media (min-width: 900px) {
-    .pricing-table {
-        flex-direction: row;
+@media only screen and (max-width:1300px) {
+    .pricing-plan {
+        max-width: 400px !important;
+        width: 100%;
+        margin: 10px auto;
+        border-radius: 20px;
+        border-bottom: 0 !important;
     }
 
+    .pricing-table {
+        flex-wrap: wrap;
+    }
 }
+
 @media only screen and (max-width:900px) {
     .pricing-plan {
         max-width: 400px;
@@ -50,6 +80,7 @@
         border-bottom: 0 !important;
     }
 }
+
 .pricing-table * {
     text-align: center;
     text-transform: uppercase;
@@ -128,20 +159,23 @@
 
 .pricing-button:hover,
 .pricing-button:focus {
-    background-color: hsla(1, 80%, 50%, 0.2 );
+    background-color: hsla(1, 80%, 50%, 0.2);
 }
 
 .pricing-button.is-featured {
     background-color: #E51C1A;
     color: #fff;
 }
+
 .pricing-button {
     transition: 0.2s ease !important;
 }
+
 .pricing-button.is-featured:hover,
 .pricing-button.is-featured:active {
     background-color: hsl(1, 80%, 30%);
 }
+
 li {
     list-style-type: none;
 }
