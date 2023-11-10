@@ -5,33 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burnin' Offroad</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/purchase.css">
 </head>
 
 <body>
-    <header class="" data-aos="fade" data-aos-duration="600">
+
+    <header>
         <div class="container d-flex align-items-center justify-content-between">
             <div class="">
                 <a href="#" class="d-flex align-items-center logo">
@@ -49,13 +38,13 @@
                             <a href="products.html" class="nav-link">Shop</a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link">About</a>
+                            <a href="about.html" class="nav-link">About</a>
                         </li>
                         <li>
                             <a href="#" class="nav-link">Listings</a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link">Contact Us</a>
+                            <a href="contact.html" class="nav-link">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -80,7 +69,7 @@
                             <a href="products.html" class="nav-link">Shop</a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link">About</a>
+                            <a href="about.html" class="nav-link">About</a>
                         </li>
                         <li>
                             <a href="#" class="nav-link">Listings</a>
@@ -98,52 +87,55 @@
     </header>
 
 
-    <div id="hero-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="600">
-                    <h1 class="fw-bold">Contact Us</h1>
-                    <h4 class="mt-4 mb-2 fw-600">Call or Text</h4>
-                    <h5 class="text-red fw-600">+123 345678</h5>
-                    <div class="d-flex justify-content-center justify-content-sm-start align-items-center mt-4">
-                        <h5 class="fw-600 mb-0 me-3">Follow us:</h5>
-                        <div class="socials">
-                            <a href="https://facebook.com" class="m-0 me-3 fs-3" target="_blank">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="https://instagram.com" class="m-0 me-3 fs-3" target="_blank">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="https://twitter.com" class="m-0 me-3 fs-3" target="_blank">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </div>
+    <div id="purchase-hero">
+        <div class="purchase-heading">
+            <h1 class="mb-0 text-light text-center fw-bold" style="font-size: 4em; text-shadow:4px 4px 3px #000">
+                Purchase </h1>
+        </div>
+        <div class="background">
+            <div class="container-fluid">
+                <div class="panel pricing-table">
+
+                    <div class="pricing-plan">
+                        <img src="assets/images/paper-plane.png" alt="" class="pricing-img">
+                        <h2 class="pricing-header">Personal</h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item">Custom domains</li>
+                            <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+                        </ul>
+                        <span class="pricing-price">Free</span>
+                        <a href="#/" class="pricing-button">Sign up</a>
                     </div>
-                </div>
-                <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="600">
-                    <h3 class="text-center fw-bold">Send us a message</h3>
-                    <div class="contact-form">
-                        <form action="mailto:sancho1111@protonmail.com" method="get" enctype="text/plain">
-                            <div class="d-flex">
-                                <input type="text" name="name" class="form-control m-2" placeholder="Your name">
-                                <input type="email" name="email" class="form-control m-2" placeholder="Your email">
-                            </div>
-                            <div class="d-flex">
-                                <input type="number" name="number" class="form-control m-2" placeholder="Your number">
-                                <input type="text" name="subject" class="form-control m-2" placeholder="Your subject">
-                            </div>
-                            <textarea name="body" name="message" rows="7" cols="120" placeholder="Your Message"
-                                class="form-control mt-2 "></textarea>
-                            <input class="btn custom-btn py-2 rounded-pill w-100 mt-4" type="submit" value="Send">
-                        </form>
+
+                    <div class="pricing-plan">
+                        <img src="assets/images/plane.png" alt="" class="pricing-img">
+                        <h2 class="pricing-header">Small team</h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item">Never sleeps</li>
+                            <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+                        </ul>
+                        <span class="pricing-price">$150</span>
+                        <a href="#/" class="pricing-button is-featured">Free trial</a>
                     </div>
+
+                    <div class="pricing-plan">
+                        <img src="assets/images/space-ship.png" alt="" class="pricing-img">
+                        <h2 class="pricing-header">Enterprise</h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item">Dedicated</li>
+                            <li class="pricing-features-item">Simple horizontal scalability</li>
+                        </ul>
+                        <span class="pricing-price">$400</span>
+                        <a href="#/" class="pricing-button">Free trial</a>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
 
-    <footer class="text-center text-lg-start bg-light text-muted mt-5">
+    <footer class="text-center text-lg-start bg-light text-muted mt-5" data-aos="fade" data-aos-duration="600">
         <section class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
                 <span>Get connected with us on social networks:</span>
@@ -168,7 +160,8 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">
                             <img src="assets/images/logo-red.png" width="100" class="me-2" alt="">
-                            <span style="font-family: 'Permanent Marker', sans-serif; font-size:20px;">Burnin' Offroad</span>
+                            <span style="font-family: 'Permanent Marker', sans-serif; font-size:20px;">Burnin'
+                                Offroad</span>
                         </h6>
                         <p>
                             Here you can use rows and columns to organize your footer content. Lorem ipsum
